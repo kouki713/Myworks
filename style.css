@@ -1,0 +1,137 @@
+main {
+    display: flex;
+}
+
+/* サイドバー */
+#sidebar {
+    width: 25%;
+    background: #33558B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+#sidebar h1 {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 100;
+    margin: 20px 30px;
+    letter-spacing: 1.5px;
+}
+#sidebar ul {
+    width: fit-content;
+    margin: 17vh auto 0;
+    padding: 0;
+}
+#sidebar li {
+    margin: 30px 0;
+}
+#sidebar li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#sidebar li a:hover {
+    color: #bed8ff;
+    
+}
+/* サイドバー ここまで */
+
+#top-contents {
+    width: 75%;
+    margin-left: 25%;
+}
+#top-contents section {
+    height: 100vh;
+}
+
+#home {
+    background: #7dafff;
+    position: relative;
+}
+#home .home-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+#home .home-text h2 {
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+}
+#home .home-text p {
+    color: #fff;
+    margin: 25px 0;
+    font-size: 1.1rem;
+}
+
+#profile {
+    background: #33558B;
+    position: relative;
+}
+.profile-contents {
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    transform: translate(0, -50%);
+    padding-left: 50px;
+}
+.profile-contents .content-title {
+    margin-bottom: 50px;
+}
+
+.profile-contents p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 2;
+    margin-bottom: 70px;
+}
+.profile-contents .profile-introduction {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.profile-contents .profile-introduction .profile-introduction-img {
+    background: #FFF;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.profile-contents .profile-introduction span {
+    color: #fff;
+    margin-left: 25px;
+}
+.profile-contents .profile-btn {
+    text-align: center;
+}
+.profile-contents .profile-btn a {
+    color: #33558B;
+    background: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+.profile-contents .profile-btn span {
+    color: #33558B;
+    background: #fff;
+    font-weight: bold;
+}
+
+
+
+#works {
+    background: #7dafff;
+}
+
+#skill {
+    background: #33558B;
+}
+
+#contact {
+    background: #7dafff;
+}
+

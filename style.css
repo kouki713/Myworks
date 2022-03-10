@@ -4,11 +4,11 @@ main {
 
 /* サイドバー */
 #sidebar {
-    width: 25%;
+    width: 20%;
     background: #33558B;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     height: 100vh;
 }
 #sidebar h1 {
@@ -31,6 +31,7 @@ main {
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
+    transition: 0.2s all;
 }
 #sidebar li a:hover {
     color: #bed8ff;
@@ -38,16 +39,35 @@ main {
 }
 /* サイドバー ここまで */
 
-#top-contents {
-    width: 75%;
-    margin-left: 25%;
-}
-#top-contents section {
+.container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
     height: 100vh;
 }
+.area {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+.area:nth-child(even) {
+    background-color: #0db;
+}
+.area:nth-child(odd) {
+    background-color: #0bd;
+}
+
+#top-contents {
+    width: 80%;
+    margin-right: 20%;
+}
+#top-contents section {
+    /* padding: 40px; */
+    background-position: center;
+    background-size: cover;
+}
+
 
 #home {
-    background: #7dafff;
+    background-image: url(images/main.jpg);
     position: relative;
 }
 #home .home-text {
@@ -96,7 +116,11 @@ main {
     margin-bottom: 70px;
 }
 .profile-contents .profile-introduction .profile-introduction-img {
-    background: #FFF;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.profile-contents .profile-introduction .profile-introduction-img img {
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -114,6 +138,10 @@ main {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 25px;
+    transition: 0.2s all;
+}
+.profile-contents .profile-btn a:hover {
+    background: #bed8ff;
 }
 .profile-contents .profile-btn span {
     color: #33558B;
@@ -124,14 +152,139 @@ main {
 
 
 #works {
-    background: #7dafff;
+    background-image: url(images/works.jpg);
+    position: relative;
+}
+.work-contents {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+.swiper {
+    max-width: 500px;
+    margin: 30px 0;
+}
+#slide .swiper-slide p {
+    width: 100%;
+    height: 28vw;
+    background-size: cover;
+    background-position: center;
+    background-position-x: 0;
+}
+#slide{ 
+    margin:30px auto 0; 
+}
+.swiper-container{ 
+    width:90%;
+}
+.swiper-slide-next,.swiper-slide-prev{ 
+    opacity: 0.8; 
+}
+.swiper-button-prev::before,.swiper-button-next::before {
+    font-size:32px;
+    color:#fff;
+    font-weight:900;
+}
+.swiper-button-prev::before { 
+    content: "←"; 
+}
+.swiper-button-next::before { 
+    content: "→"; 
 }
 
+
+
+
+.swiper-slide-active {
+    width: 58% !important;
+}
+	
+
 #skill {
-    background: #33558B;
+    background-image: url(images/skill.jpg);
+    position: relative;
+}
+#skill .skill-contents {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+#skill .skill-contents h2 {
+    font-size: 2.5rem;
+}
+#skill .skill-contents ul {
+    display: flex;
+    flex-flow: wrap;
+    padding: 0 20px;
+    justify-content: center;
+}
+#skill .skill-contents li {
+    width: 7%;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px 25px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 30px;
+    flex-flow: column;
+    position: relative;
+    max-width: 97px;
+}
+#skill .skill-contents li img {
+    width: 100%;
+}
+#skill .skill-contents li p {
+    font-size: 0.8rem;
+    margin-top: 3px;
+    color: #141a2b;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 #contact {
-    background: #7dafff;
+    background-image: url(images/contact.jpg);
+    position: relative;
+}
+.contact-contents {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+.contact-contents h2 {
+    
+}
+.contact-contents h5 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 30px;
+}
+.contact-contents a {
+    display: block;
+    background: #fff;
+    width: fit-content;
+    margin: 30px auto 0;
+    padding: 10px 15px;
+    border-radius: 40px;
+}
+.contact-contents a img:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0.83em;
+    font-family: FontAwesome;
+    font-weight: 900;
+    transform: translateY(-50%);
 }
 

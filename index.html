@@ -2,13 +2,19 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <link href="all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+        <script src="all.js"></script>
     </head>
     <body>
         <main>
+            
             <div id="sidebar">
-                <h1>Portfolio</h1>
                 <ul>
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#profile">PROFILE</a></li>
@@ -17,63 +23,79 @@
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
-            <div id="top-contents">
-                <section id="home">
+            <div id="top-contents" class="container">
+                
+                <section id="home" class="area">
                     <div class="home-text">
                         <h2>Portfolio</h2>
                         <p>ポートフォリオをご覧いただき、ありがとうございます！<br>
                         過去の制作事例やこれまでの経歴、得意な技術要素を紹介しております。</p>
                     </div>
+                    <a href="#"><span></span>Scroll</a>
                 </section>
-                <section id="profile">
+                <section id="profile" class="area">
                     <div class="profile-contents">
                         <h2 class="content-title">PROFILE</h2>
                         <p>2020年よりWEBアプリケーションエンジニアとしてIT業界に従事しております。<br>
                             受託案件で、PHPやJavaでメジャーなフレームワークを用いた開発の経験がございます。<br>
                             直近では、laravel + wordpress + webpackを使用したフロントエンド技術を用いたプロジェクトの経験もございます。</p>
                         <div class="profile-introduction">
-                            <div class="profile-introduction-img" style="background: #FFF;"></div>
+                            <div class="profile-introduction-img"><img src="images/profile_icon.png"></div>
                             <span>澤田 滉樹 / kouki.sawada</span>
                         </div>
                         <div class="profile-btn">
-                            <a href="/Myworks/profile">経験プロジェクトを見る <span>></span></a>
+                            <a href="profile/index.html">経験プロジェクトを見る<span></span></a>
                         </div>
                     </div>
                 </section>
-                <section id="works">
+                
+                
+                <section id="works" class="area">
                     <div class="work-contents">
                         <h2 class="content-title">WORKS</h2>
-                        <div class="work-index">
-                            <a href="/Myworks/works/sample.html" class="content-box">
-                                <div class="work-image" style="background-color: #bed8ff;"></div>
-                                <p>コーポレートサイトです。</p>
-                            </a>
-                            <a href="/Myworks/works/sample.html" class="content-box">
-                                <div class="work-image" style="background-color: #bed8ff;"></div>
-                                <p>コーポレートサイトです。</p>
-                            </a>
-                        </div>
+                        <div id="slide">
+                            <div class="swiper-container">
+                             <ul class="swiper-wrapper">
+                              <!-- スライドする画像 -->
+                              <li class="swiper-slide"><a href="works/sample/index.html"><p style="background-image: url(images/work_01.jpg)"></p></a></li>
+                              <li class="swiper-slide"><a href="works/sample/index.html"><p style="background-image: url(images/work_02.jpg)"></p></a></li>
+                              <li class="swiper-slide"><a href="works/sample/index.html"><p style="background-image: url(images/work_01.jpg)"></p></a></li>
+                              <!-- /スライドする画像 -->
+                             </ul>
+                            </div>
+                           </div>
+                           <a href="/Myworks/works">ALL WORKS </a>
                     </div>
-                    <a href="/Myworks/works">ALL WORKS </a>
                     
                 </section>
-                <section id="skill">
+                <section id="skill" class="area">
                     <div class="skill-contents">
                         <h2 class="content-title">SLILL</h2>
                         <ul>
-                            <li><div style="background-color: #fff;"></div></li>
-                            <li><div style="background-color: #fff;"></div></li>
-                            <li><div style="background-color: #fff;"></div></li>
-                            <li><div style="background-color: #fff;"></div></li>
-                            <li><div style="background-color: #fff;"></div></li>
-                            <li><div style="background-color: #fff;"></div></li>
-                            
+                            <li><img src="images/skill_icon/html-5.svg"><p>HTML5</p></li>
+                            <li><img src="images/skill_icon/css-3.svg"><p>CSS</p></li>
+                            <li><img src="images/skill_icon/javascript.svg"><p>Javascript</p></li>
+                            <li><img src="images/skill_icon/jquery.svg"><p>jQuery</p></li>
+                            <li><img src="images/skill_icon/wordpress-icon.svg"><p>Wordpress</p></li>
+                            <li><img src="images/skill_icon/php.svg"><p>PHP</p></li>
+                            <li><img src="images/skill_icon/laravel.svg"><p>Laravel</p></li>
+                            <li><img src="images/skill_icon/codeigniter.svg"><p>CodeIgniter</p></li>
+                            <li><img src="images/skill_icon/java.svg"><p>Java</p></li>
+                            <li><img src="images/skill_icon/spring-icon.svg"><p>SpringBoot</p></li>
+                            <li><img src="images/skill_icon/mysql.svg"><p>MySQL</p></li>
+                            <li><img src="images/skill_icon/docker-icon.svg"><p>Docker</p></li>
+                            <li><img src="images/skill_icon/github-icon.svg"><p>GitHub</p></li>
+                            <li><img src="images/skill_icon/postman-icon.svg"><p>Postman</p></li>
+                            <li><img src="images/skill_icon/bootstrap.svg"><p>Bootstrap</p></li>
+                            <li><img src="images/skill_icon/materializecss.svg"><p>Materialise</p></li>
                         </ul>
                     </div>
                 </section>
-                <section id="contact">
+                <section id="contact" class="area">
                     <div class="contact-contents">
                         <h2 class="content-title">CONTACT</h2>
+                        <h5>お仕事のご依頼はこちらからお願いします。</h5>
+                        <a href="https://crowdworks.jp/public/employees/4778499"><img src="https://cw-assets.crowdworks.jp/assets/cw_theme-rails/globals/cwpf-logo_vector-9993dd3c859f30ec5a84be730b20b7408651e9180c18cf8e3cefafba549424c5.svg"></a>
                     </div>
                 </section>
             </div>

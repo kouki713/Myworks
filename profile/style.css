@@ -1,0 +1,25 @@
+main {
+    background: #33558b;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.title {
+    text-align: center;
+    padding: 50px;
+}
+.title h2 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.profile p {
+    color: #fff;
+}

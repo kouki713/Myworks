@@ -16,6 +16,173 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 2rem;
     letter-spacing: 1.5px;
 }
+@media screen and (max-width: 420px) {
+    .content-title {
+        font-size: 1.7rem;
+    }
+}
+
+/* サイドバー */
+#sidebar {
+    width: 20%;
+    background: #33558B;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    transition: 0.3s all;
+}
+#sidebar h1 {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 100;
+    margin: 20px 30px;
+    letter-spacing: 1.5px;
+}
+#sidebar ul {
+    width: fit-content;
+    margin: 21vh 3vw 0;
+    padding: 0;
+}
+#sidebar li {
+    margin: 30px 0;
+}
+#sidebar li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.2s all;
+}
+#sidebar li a:hover {
+    color: #bed8ff;
+    
+}
+.active {
+    color: #a51d33 !important;
+}
+@media screen and (max-width: 1024px) {
+	#sidebar {
+        width: 30%;
+        right: -30%;
+        z-index: 999;
+    }
+    #sidebar ul {
+        margin: 21vh 6vw 0;
+    }
+}
+@media screen and (max-width: 792px) {
+	#sidebar {
+        width: 35%;
+        right: -35%;
+        z-index: 999;
+    }
+    #sidebar ul {
+        margin: 21vh 6vw 0;
+    }
+    #sidebar li a {
+        font-size: 1.3rem;
+    }
+} 
+@media screen and (max-width: 599px) {
+    #sidebar {
+        width: 40%;
+        right: -40%;
+        z-index: 999;
+    }
+	#sidebar li a {
+        font-size: 1.1rem;
+    }
+} 
+@media screen and (max-width: 420px) {
+    #sidebar {
+        width: 45%;
+        right: -45%;
+        z-index: 999;
+    }
+}
+/* サイドバー ここまで */
+
+
+/* ハンバーガーメニュー */
+#menu-btn-check:checked ~ #sidebar {
+    right: 0;/*メニューを画面内へ*/
+}
+#menu-btn-check:checked ~ #menu-background {
+    display: block;/*メニューを画面内へ*/
+    opacity: 1;
+    transition: 0.3s all;
+}
+#menu-background {
+    display: none;
+    z-index: 998;
+    transition: 0.3s all;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu-btn span:before,
+.menu-btn span:after {
+    transition: 0.2s all;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu-btn-check {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	.menu-btn {
+        display: block;
+    }
+}
 
 
 /* スクロールアイコン */
@@ -27,7 +194,7 @@ h1,h2,h3,h4,h5,h6,p{
     z-index: 2;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    transform: translate(-50%, -50%);
     text-decoration: none;
     color: #fff; 
 }
@@ -88,3 +255,28 @@ h1,h2,h3,h4,h5,h6,p{
       opacity: 0;
     }
 }
+
+.fade{
+    opacity : 0;
+    transition: opacity 0.5s;
+  }
+   
+.fade.view{
+    opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+	
+}
+@media screen and (max-width: 599px) {
+	
+} 
+@media screen and (max-width: 420px) {
+
+}
+
+  
+
+
+
+    

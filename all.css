@@ -59,7 +59,7 @@ h1,h2,h3,h4,h5,h6,p{
     
 }
 .active {
-    color: #a51d33 !important;
+    color: #cf3d54 !important;
 }
 @media screen and (max-width: 1024px) {
 	#sidebar {

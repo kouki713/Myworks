@@ -66,6 +66,13 @@ $(function() {
         return false;
     });
 
+    //ハンバーガー
+    var $checkbox = $('input[type="checkbox"]');
+
+    $('#sidebar').find('a').on('click', function() {
+        $checkbox.removeAttr('checked').prop('checked', false).change();
+    });
+
     //スクロールで要素の表示制御
     $('#top-contents').scroll(function () {
         $('.fade').removeClass('view');

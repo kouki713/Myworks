@@ -13,13 +13,354 @@ main {
     font-size: 2rem;
     color: #fff;
 }
+.title h3 {
+    font-size: 1.6rem;
+    color: #fff;
+}
+@media screen and (max-width: 1024px) {
+	
+}
+@media screen and (max-width: 792px) {
+	.title h3 {
+        font-size: 1.4rem;
+    }
+} 
+@media screen and (max-width: 599px) {
+	.title h2 {
+        font-size: 1.8rem;
+    }
+    .title h3 {
+        font-size: 1.3rem;
+    }
+
+} 
+@media screen and (max-width: 420px) {
+    .title h2 {
+        font-size: 1.6rem;
+    }
+    .title h3 {
+        font-size: 1.2rem;
+    }
+}
 
 
 .profile {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 50px;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
 }
-.profile p {
+.profile .profile-img  {
+    width: 38%;
+    text-align: center;
+}
+.profile .profile-img img {
+    height: 140px;
+    border-radius: 50%;
+}
+.profile .profile-text {
+    width: 62%;
+}
+.profile .profile-text h5 {
     color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+.profile .profile-text p {
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 1024px) {
+	
+}
+@media screen and (max-width: 792px) {
+	.profile {
+        padding: 20px;
+        width: 90%;
+    }
+} 
+@media screen and (max-width: 599px) {
+	.profile .profile-img  {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .profile .profile-img img {
+        height: 100px;
+        border-radius: 50%;
+    }
+    .profile .profile-text {
+        width: 90%;
+    }
+    .profile .profile-text h5 {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+} 
+@media screen and (max-width: 420px) {
+    .profile {
+        padding: 20px 10px;
+        width: 90%;
+    }
+    .profile .profile-text {
+        width: 95%;
+    }
+    .profile .profile-text p {
+        font-size: 0.9rem;
+    }
+}
+
+
+.skill {
+    padding: 30px 80px;
+}
+.skill ul {
+    padding: 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.skill li {
+    width: fit-content;
+    background: rgba(255,255,255,0.8);
+    padding: 6px 7px 6px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 15px;
+    min-width: 50px;
+}
+.skill li img {
+    height: 35px;
+    max-width: 40px;
+}
+.skill li p {
+    font-size: 0.8rem;
+    margin-top: 2px;
+}
+@media screen and (max-width: 1024px) {
+	
+}
+@media screen and (max-width: 792px) {
+	.skill {
+        padding: 20px;
+    }
+    .skill li {
+        padding: 4px 5px;
+        min-width: 45px;
+    }
+    .skill li p {
+        font-size: 0.7rem;
+    }
+} 
+@media screen and (max-width: 599px) {
+	.skill {
+        padding: 20px;
+    }
+    .skill li {
+        padding: 4px 5px;
+        min-width: 40px;
+    }
+    .skill li img {
+        height: 30px;
+        max-width: 40px;
+    }
+    .skill li p {
+        font-size: 0.6rem;
+    }
+} 
+@media screen and (max-width: 420px) {
+    .skill {
+        padding: 0;
+    }
+    .skill li {
+        min-width: 30px;
+        margin: 3px;
+    }
+    .skill li img {
+        height: 25px;
+    }
+    .skill li p {
+        font-size: 0.5rem;
+    }
+    
+}
+
+
+.achievement {
+    padding: 0 80px 100px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.s_01 .accordion_one {
+    max-width: 1024px;
+    margin: 0 auto;
+    background: #213c66;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.s_01 .accordion_one .accordion_header {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 11%;
+    position: relative;
+    z-index: +1;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.s_01 .accordion_one .accordion_header:hover {
+    opacity: .5;
+    border-radius: 10px;
+}
+.s_01 .accordion_one .accordion_header .i_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    box-sizing: border-box;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform-origin: center center;
+    transition-duration: 0.2s;
+}
+.s_01 .accordion_one .accordion_header .i_box .one_i {
+    display: block;
+    width: 18px;
+    height: 18px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform-origin: center center;
+    transition-duration: 0.2s;
+    position: relative;
+}
+.s_01 .accordion_one .accordion_header.open .i_box {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+}
+.open-content {
+    background: #011d46 !important;
+}
+.s_01 .accordion_one .accordion_header .i_box .one_i:before, .s_01 .accordion_one .accordion_header .i_box .one_i:after {
+    display: flex;
+    content: '';
+    background-color: #fff;
+    border-radius: 10px;
+    width: 18px;
+    height: 4px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform-origin: center center;
+}
+.s_01 .accordion_one .accordion_header .i_box .one_i:before {
+    width: 4px;
+    height: 18px;
+    top: 0;
+    left: 7px;
+}
+.s_01 .accordion_one .accordion_header.open .i_box .one_i:before {
+    content: none;
+}
+.s_01 .accordion_one .accordion_header.open .i_box .one_i:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.s_01 .accordion_one .accordion_inner {
+    display: none;
+    padding: 15px 40px 30px;
+    box-sizing: border-box;
+}
+.s_01 .accordion_one .accordion_inner .box_one {
+
+}
+.s_01 .accordion_one .accordion_inner p.txt_a_ac {
+    margin: 0 0 10px;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+    
+@media screen and (max-width: 1024px) {
+	
+}
+@media screen and (max-width: 792px) {
+	.achievement {
+        padding: 0 20px 100px;
+        max-width: 600px;
+    }
+    .s_01 .accordion_one .accordion_header {
+        font-size: 1.1rem;
+    }
+    .s_01 .accordion_one .accordion_inner {
+        padding: 15px 30px 30px;
+    }
+    .s_01 .accordion_one .accordion_inner p.txt_a_ac {
+        font-size: 0.8rem;
+    }
+} 
+@media screen and (max-width: 599px) {
+	.s_01 .accordion_one .accordion_header {
+        font-size: 0.9rem;
+    }
+    .s_01 .accordion_one .accordion_header {
+        padding: 10px 11%;
+    }
+    .s_01 .accordion_one .accordion_header .i_box {
+        right: 1%;
+    }
+    .s_01 .accordion_one .accordion_inner {
+        padding: 15px 10px 30px;
+    }
+} 
+@media screen and (max-width: 420px) {
+    .achievement {
+        padding: 0 10px 100px;
+    }
+    .s_01 .accordion_one .accordion_header {
+    }
+    .s_01 .accordion_one .accordion_header {
+        padding: 10px 15% 10px 10px;
+        font-size: 0.8rem;
+    }
+    .s_01 .accordion_one .accordion_inner p.txt_a_ac {
+        font-size: 0.7rem;
+    }
+}
+
+
+.back {
+    margin: 0 auto;
+    width: fit-content;
+    padding-bottom: 100px;
+}
+.back a {
+    color: #fff;
+    font-size: 1.2rem;
+}
+@media screen and (max-width: 1024px) {
+	
+}
+@media screen and (max-width: 792px) {
+	
+} 
+@media screen and (max-width: 599px) {
+	
+} 
+@media screen and (max-width: 420px) {
+    
 }

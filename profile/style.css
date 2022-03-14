@@ -203,14 +203,14 @@ main {
 .s_01 .accordion_one {
     max-width: 1024px;
     margin: 0 auto;
-    background: #213c66;
+    background: #eee;
     margin-bottom: 20px;
     border-radius: 10px;
 }
 .s_01 .accordion_one .accordion_header {
-    color: #fff;
-    font-size: 1.2rem;
-    padding: 10px 11%;
+    color: #333;
+    font-size: 1.1rem;
+    padding: 10px 11% 10px 40px;
     position: relative;
     z-index: +1;
     cursor: pointer;
@@ -253,10 +253,11 @@ main {
 .open-content {
     background: #011d46 !important;
 }
-.s_01 .accordion_one .accordion_header .i_box .one_i:before, .s_01 .accordion_one .accordion_header .i_box .one_i:after {
+.s_01 .accordion_one .accordion_header .i_box .one_i:before, 
+.s_01 .accordion_one .accordion_header .i_box .one_i:after {
     display: flex;
     content: '';
-    background-color: #fff;
+    background-color: #444;
     border-radius: 10px;
     width: 18px;
     height: 4px;
@@ -290,7 +291,7 @@ main {
 }
 .s_01 .accordion_one .accordion_inner p.txt_a_ac {
     margin: 0 0 10px;
-    color: #fff;
+    color: #333;
     font-size: 0.9rem;
     line-height: 1.3;
 }

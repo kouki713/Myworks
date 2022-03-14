@@ -230,9 +230,11 @@ main {
     text-decoration: none;
     border-radius: 25px;
     transition: 0.2s all;
+    font-weight: bold;
 }
 .profile-contents .profile-btn a:hover {
     background: #bed8ff;
+    
 }
 .profile-contents .profile-btn span {
     color: #33558B;
@@ -278,19 +280,24 @@ main {
     width: 48%;
     margin: 1%;
     border-radius: 10px;
+    box-shadow: 3px 3px 6px #092146;
+    position: relative;
+    transition: 0.2s all;
 }
 .work-contents p {
     width: 100%;
-    height: 17vw;
+    height: 18vw;
     background-position: center;
     background-size: cover;
 }
 .work-contents .title {
-    color: #CCC;
-    padding: 10px 0 2px;
+    padding: 15px 0;
     display: block;
     font-weight: inherit;
     transition: all 0.2s;
+    color: #111;
+    background: #fff;
+    border-top: #38507a 1px solid;
 }
 .work-contents .screen {
     background: rgb(51, 85, 139,0.3);
@@ -299,13 +306,20 @@ main {
     display: block;
     cursor: pointer;
     transition: all 0.2s;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-.work-contents p:hover .screen {
+.work-contents li:hover .screen {
     background: none;
 }
-.work-contents p:hover + .title {
-    color: #fff;
+.work-contents li:hover {
+    transform: scale(1.06);
 }
+/* .work-contents p:hover + .title {
+    color: #111;
+    background: #fff;
+} */
 @media screen and (max-width: 1024px) {
     .work-contents p {
         height: 23vw;
@@ -314,7 +328,7 @@ main {
         background: none;
     }
     .work-contents .title {
-        color: #FFF;
+        color: #111;
     }
 }
 @media screen and (max-width: 792px) {
@@ -322,7 +336,7 @@ main {
         padding: 30px 4vw 0;
     }
     .work-contents p {
-        height: 23vw;
+        height: 25vw;
     }
 } 
 @media screen and (max-width: 599px) {
@@ -468,6 +482,9 @@ main {
     padding: 10px 15px;
     border-radius: 40px;
 }
+.contact-contents a:hover {
+    background: #bed8ff;
+}
 .contact-contents a img:after {
     content: "";
     position: absolute;
@@ -517,6 +534,7 @@ main {
     transform: translate(-50%, -50%);
     width: 65%;
     padding: 20px;
+    border-radius: 5px;
 }
 .modal .work-img {
     width: 70%;

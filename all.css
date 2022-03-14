@@ -32,16 +32,24 @@ h1,h2,h3,h4,h5,h6,p{
     height: 100vh;
     transition: 0.3s all;
 }
-#sidebar h1 {
+#sidebar .icon {
+    display: flex;
+    align-items: center;
+    margin: 3vh 0 0 3vw;
+    text-decoration: none;
+}
+#sidebar .icon img {
+    height: 50px;
+    border-radius: 50%;
+}
+#sidebar .icon span{
+    font-size: 0.8rem;
     color: #fff;
-    font-size: 2.2rem;
-    font-weight: 100;
-    margin: 20px 30px;
-    letter-spacing: 1.5px;
+    margin-left: 10px;
 }
 #sidebar ul {
     width: fit-content;
-    margin: 21vh 3vw 0;
+    margin: 17vh 3vw 0;
     padding: 0;
 }
 #sidebar li {
@@ -68,7 +76,10 @@ h1,h2,h3,h4,h5,h6,p{
         z-index: 999;
     }
     #sidebar ul {
-        margin: 21vh 6vw 0;
+        margin: 10vh 6vw 0;
+    }
+    #sidebar .icon {
+        margin: 10vh 0 0 6vw;
     }
 }
 @media screen and (max-width: 792px) {
@@ -77,9 +88,7 @@ h1,h2,h3,h4,h5,h6,p{
         right: -35%;
         z-index: 999;
     }
-    #sidebar ul {
-        margin: 21vh 6vw 0;
-    }
+    
     #sidebar li a {
         font-size: 1.3rem;
     }
@@ -93,12 +102,18 @@ h1,h2,h3,h4,h5,h6,p{
 	#sidebar li a {
         font-size: 1.1rem;
     }
+    #sidebar .icon img {
+        height: 45px;
+    }
 } 
 @media screen and (max-width: 420px) {
     #sidebar {
         width: 45%;
         right: -45%;
         z-index: 999;
+    }
+    #sidebar .icon img {
+        height: 40px;
     }
 }
 /* サイドバー ここまで */

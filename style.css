@@ -231,6 +231,10 @@ main {
     border-radius: 25px;
     transition: 0.2s all;
     font-weight: bold;
+    min-width: 150px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
 }
 .profile-contents .profile-btn a:hover {
     background: #bed8ff;
@@ -535,7 +539,7 @@ main {
     width: 65%;
     padding: 20px;
     border-radius: 5px;
-    max-height: 70%;
+    max-height: 75%;
     overflow: scroll;
 }
 .modal .work-img {

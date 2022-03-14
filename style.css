@@ -535,9 +535,12 @@ main {
     width: 65%;
     padding: 20px;
     border-radius: 5px;
+    max-height: 70%;
+    overflow: scroll;
 }
 .modal .work-img {
-    width: 70%;
+    height: 30vh;
+    max-height: 250px;
     margin: 0 auto;
     display: block;
     border: 3px solid #ddd;
@@ -546,6 +549,7 @@ main {
     padding: 0 10vw;
     color: #555;
     margin: 0 0 5px;
+    text-align: center;
 }
 .modal p {
     padding: 0 10vw;

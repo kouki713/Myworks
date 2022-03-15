@@ -218,7 +218,16 @@ main {
 }
 .profile-contents .profile-introduction span {
     color: #fff;
-    margin-left: 25px;
+    margin-left: 30px;
+    letter-spacing: 1.5px;
+}
+.profile-contents .profile-introduction a {
+    margin-left: 20px;
+}
+.profile-contents .profile-introduction img {
+    width: 30px;
+}
+.profile-contents .profile-introduction img:hover {
 }
 .profile-contents .profile-btn {
     text-align: center;

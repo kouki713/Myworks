@@ -45,7 +45,8 @@ h1,h2,h3,h4,h5,h6,p{
 #sidebar .icon span{
     font-size: 0.8rem;
     color: #fff;
-    margin-left: 10px;
+    margin-left: 15px;
+    letter-spacing: 1.5px;
 }
 #sidebar ul {
     width: fit-content;
@@ -58,13 +59,22 @@ h1,h2,h3,h4,h5,h6,p{
 #sidebar li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     transition: 0.2s all;
 }
 #sidebar li a:hover {
     color: #bed8ff;
     
+}
+#sidebar .twitter_link{
+    display: block;
+    position: absolute;
+    bottom: 3vh;
+    left: 3vw;
+}
+#sidebar .twitter_link img{
+    width: 35px;
 }
 .active {
     color: #cf3d54 !important;
@@ -81,6 +91,9 @@ h1,h2,h3,h4,h5,h6,p{
     #sidebar .icon {
         margin: 10vh 0 0 6vw;
     }
+    #sidebar .twitter_link{
+        left: 6vw;
+    }
 }
 @media screen and (max-width: 792px) {
 	#sidebar {
@@ -96,12 +109,11 @@ h1,h2,h3,h4,h5,h6,p{
 @media screen and (max-width: 599px) {
     #sidebar {
         width: 40%;
-        right: -40%;
+        right: -90%;
         z-index: 999;
+        min-width: 320px;
     }
-	#sidebar li a {
-        font-size: 1.1rem;
-    }
+	
     #sidebar .icon img {
         height: 45px;
     }

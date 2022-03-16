@@ -219,9 +219,10 @@ main {
     background: #eee;
     margin-bottom: 20px;
     border-radius: 10px;
+    border: 2px solid #06275c;
 }
 .s_01 .accordion_one .accordion_header {
-    color: #333;
+    color: #081e40;
     font-size: 1.1rem;
     padding: 10px 11% 10px 40px;
     position: relative;
@@ -304,7 +305,7 @@ main {
 }
 .s_01 .accordion_one .accordion_inner p.txt_a_ac {
     margin: 0 0 10px;
-    color: #333;
+    color: #081e40;
     font-size: 0.9rem;
     line-height: 1.3;
 }

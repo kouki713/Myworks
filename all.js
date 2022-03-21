@@ -14,11 +14,8 @@ $(function() {
         var scroll = $(this).scrollTop();
         var home = $('#home').position().top;
         var works = $('#works').position().top;
-        var profile = $('#profile').position().top;
         var skill = $('#skill').position().top;
-        var contact = $('#contact').position().top;
-        var a = $('#contact').offset();
-        //console.log(a);
+        var achievementelse = $('#achievement').position().top;
         
         if(home == 0) {
             $('#sidebar').find('li').find('a').removeClass('active');
@@ -26,15 +23,17 @@ $(function() {
         } else if(works < 100 && works > -100) {
             $('#sidebar').find('li').find('a').removeClass('active');
             $('#works_link').addClass('active');
-        } else if (profile < 100 && profile > -100) {
-            $('#sidebar').find('li').find('a').removeClass('active');
-            $('#profile_link').addClass('active');
-        } else if(skill < 100 && skill > -100) {
+        }  else if(skill < 100 && skill > -100) {
             $('#sidebar').find('li').find('a').removeClass('active');
             $('#skill_link').addClass('active');
-        } else if(contact < 100 && contact > -100) {
+        } else if(achievementelse < 100 && achievementelse > -100) {
             $('#sidebar').find('li').find('a').removeClass('active');
-            $('#contact_link').addClass('active');
+            $('#achievement_link').addClass('active');
+        }
+        if(works < 100) {
+            $('#sidebar').find('.icon').removeClass('icon-hide');
+        } else {
+            $('#sidebar').find('.icon').addClass('icon-hide');
         }
 
     });

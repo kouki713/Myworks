@@ -14,7 +14,8 @@ h1,h2,h3,h4,h5,h6,p{
 .content-title {
     color: #fff;
     font-size: 2rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 2.5px;
+    font-weight: normal;
 }
 @media screen and (max-width: 420px) {
     .content-title {
@@ -25,7 +26,7 @@ h1,h2,h3,h4,h5,h6,p{
 /* サイドバー */
 #sidebar {
     width: 20%;
-    background: #33558B;
+    background: #65a4c3;
     position: fixed;
     top: 0;
     right: 0;
@@ -37,6 +38,10 @@ h1,h2,h3,h4,h5,h6,p{
     align-items: center;
     margin: 3vh 0 0 3vw;
     text-decoration: none;
+    transition: 0.2s all;
+}
+#sidebar .icon-hide {
+    opacity: 0;
 }
 #sidebar .icon img {
     height: 50px;
@@ -60,8 +65,9 @@ h1,h2,h3,h4,h5,h6,p{
     color: #fff;
     text-decoration: none;
     font-size: 1.3rem;
-    font-weight: bold;
+    font-weight: normal;
     transition: 0.2s all;
+    letter-spacing: 2px;
 }
 #sidebar li a:hover {
     color: #bed8ff;
@@ -77,7 +83,7 @@ h1,h2,h3,h4,h5,h6,p{
     width: 35px;
 }
 .active {
-    color: #cf3d54 !important;
+    color: #00e3d2 !important;
 }
 @media screen and (max-width: 1024px) {
 	#sidebar {
@@ -121,7 +127,7 @@ h1,h2,h3,h4,h5,h6,p{
 @media screen and (max-width: 420px) {
     #sidebar {
         width: 45%;
-        right: -45%;
+        right: -90%;
         z-index: 999;
     }
     #sidebar .icon img {
@@ -213,7 +219,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 
 /* スクロールアイコン */
-#home a {
+#home .scroll {
     padding-top: 60px;
     position: absolute;
     bottom: 20px;
@@ -223,20 +229,20 @@ h1,h2,h3,h4,h5,h6,p{
     -webkit-transform: translate(0, -50%);
     transform: translate(-50%, -50%);
     text-decoration: none;
-    color: #fff; 
+    color: #65a4c3; 
 }
-#home a span {
+#home .scroll span {
     position: absolute;
     top: 0;
     left: 50%;
     width: 30px;
     height: 50px;
     margin-left: -15px;
-    border: 2px solid #fff;
+    border: 2px solid #65a4c3;
     border-radius: 50px;
     box-sizing: border-box;
 }
-#home a span::before {
+#home .scroll span::before {
     position: absolute;
     top: 10px;
     left: 50%;
@@ -244,7 +250,7 @@ h1,h2,h3,h4,h5,h6,p{
     width: 6px;
     height: 6px;
     margin-left: -3px;
-    background-color: #fff;
+    background-color: #65a4c3;
     border-radius: 100%;
     -webkit-animation: sdb 2s infinite;
     animation: sdb 2s infinite;
